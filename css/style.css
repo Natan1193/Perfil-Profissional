@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --font-family-tile: "Iceberg", sans-serif;
+    --font-weight-base: 400;
+    --font-style: normal;
+    --font-family-body: "Iceland", sans-serif;
+}
+
+body {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-base);
+    font-style: var(--font-style);
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1e2d3b;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 10px 15px 1px #1e2d3b51;
+}
+
+header h1 {
+    font-family: var(--font-family-tile);
+    font-weight: var(--font-weight-base);
+    font-style: var(--font-style);
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    box-shadow: 0 10px 15px 1px #1e2d3b51;
+}
+
+section h2 {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-base);
+    font-style: var(--font-style);
+    margin-bottom: 10px;
+    color: #1e2d3b;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills li {
+    padding: 6px 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #4a6c8c;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
