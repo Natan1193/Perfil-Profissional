@@ -6,7 +6,7 @@
 }
 
 :root {
-    --font-family-tile: "Iceberg", sans-serif;
+    --font-family-title: "Iceberg", sans-serif;
     --font-weight-base: 400;
     --font-style: normal;
     --font-family-body: "Iceland", sans-serif;
@@ -25,11 +25,21 @@ header {
     color: #fff;
     text-align: center;
     padding: 30px 20px;
-    box-shadow: 0 10px 15px 1px #1e2d3b51;
+    box-shadow: 0 8px 20px rgba(30, 45, 59, 0.15);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    margin-bottom: 15px;
+    color: #1e2d3b;
+    border: 3px solid #fff;
 }
 
 header h1 {
-    font-family: var(--font-family-tile);
+    font-family: var(--font-family-title);
     font-weight: var(--font-weight-base);
     font-style: var(--font-style);
     font-size: 2.5rem;
@@ -57,7 +67,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     font-size: 1.3rem;
-    box-shadow: 0 10px 15px 1px #1e2d3b51;
+    box-shadow: 0 8px 20px rgba(30, 45, 59, 0.15);
 }
 
 section h2 {
@@ -84,4 +94,17 @@ section h2 {
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    main {
+        gap: 40px;
+    }
+    section {
+        padding: 30px;
+        font-size: 1.4rem;
+    }
 }
